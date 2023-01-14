@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iswarya-F2-Contest-2-Jan-14th</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="heading-text">New Employees</div>
+    <form>
+      <div class="row">
+        <div class="name-container">
+          <label for="name" class="name-label">Enter Name</label><br /><br />
+          <input type="text" class="name-input" required />
+        </div>
+        <div class="profession-container">
+          <label for="profession" class="profession-label"
+            >Enter Profession</label
+          ><br /><br />
+          <input type="text" class="profession-input" required />
+        </div>
+        <div class="age-container">
+          <label for="age" class="age-label">Enter Age</label><br /><br />
+          <input type="number" class="age-input" required />
+        </div>
+      </div>
+      <div id="submit-btn-container">
+        <button type="submit" id="add-user-btn">Add User</button>
+      </div>
+    </form>
+
+    <div class="employees-container">
+      <div class="added-employees-text heading-text">Added Employees</div>
+      <br />
+      <div class="employees-count" style="color: grey">
+        You have 0 Employees.
+      </div>
+      <div class="employee-actions">
+        <div class="table-container">
+          <table id="employee-table" style="border: none"></table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
